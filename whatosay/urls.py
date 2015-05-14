@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     url(r'^hello/$','trips.views.hello_world'),
     url(r'^$', 'trips.views.home'),
+    url(r'^shadowsock/yanzheng/(?P<imei>\w*)', 'shadowsock.views.yanzheng'),
 ]
